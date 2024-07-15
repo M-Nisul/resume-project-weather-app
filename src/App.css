@@ -109,10 +109,12 @@ img{
 
   .forecast{
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
   }
 
   .forecast .forecast-item{
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .forecast h3{
