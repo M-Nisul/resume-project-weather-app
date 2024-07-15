@@ -1,6 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root{
+  --text-color: #eef0f3;
+  --primary-color: #b0b9c8;
+  --secondary-color: #4f4664;
+  --accent-color: #957da5;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  width: 100vw;
+}
+
+.input{
+  margin-bottom: 2rem;
+}
+
+input{
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--secondary-color);
+  padding-left: 0.5rem;
+  outline: none;
+  border: none;
+  width: 15rem;
+  height: 1.8rem;
+}
+
+label{
+  margin-right: 0.6rem;
+}
+
+img{
+  max-width: 15rem;
+}
+
+.forecast{
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.forecast h3{
+  position: absolute;
+  top: 0%;
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.forecast .forecast-item{
+  margin-top: 5rem;
+}
+
+.forecast img{
+  max-width: 10rem;
+}
+
+.credits{
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+}
+
+@media(max-width: 600px){
+  body{
+    width: 100vw;
+  }
+
+  #root{
+    max-width: 600px;
+    text-align: center;
+    padding: 0rem;
+    padding-top: 1rem;
+    overflow-y: scroll;
+  }
+
+  .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container{
+    max-width: 600px;
+    margin: auto;
+    inset: 0;
+  }
+
+  h2{
+    font-size: 1.4rem;
+  }
+
+  .weather img{
+    width: 7rem;
+  }
+
+  .forecast{
+    max-width: 600px;
+  }
+
+  .forecast .forecast-item{
+    margin-top: 3rem;
+  }
+
+  .forecast h3{
+    font-size: 1.3rem;
+  }
+
+  .forecast img{
+    width: 4rem;
+  }
+
+  .forecast p{
+    font-size: 0.9rem;
+  }
+}
+
+@media(max-width: 1250px){
+  
+  #root{
+    padding: 2rem 0rem;
+  }
+
+  .forecast .forecast-item{
+    margin-top: 3rem;
+  }
+
+  .forecast h3{
+    font-size: 1.3rem;
+  }
+
+  .forecast img{
+    width: 6rem;
+  }
+
+  .forecast p{
+    font-size: 1rem;
+  }
 }
